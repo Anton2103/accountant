@@ -7,7 +7,7 @@
 themes/*
 !themes/accountant/
 !themes/accountant/languages
-themes/accountant/languages/*
+themes/accountant/languages/*git
 themes/accountant/vendor
 
 !plugins/
