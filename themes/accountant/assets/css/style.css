@@ -1,0 +1,226 @@
+/*!* Main style features*!*/
+
+section {
+    padding: 40px 0;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, a {
+    font-family: IBMPlexSerif, sans-serif;
+    line-height: 1.5;
+    font-style: normal;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 49px;
+}
+
+h2 {
+    font-size: 39px;
+}
+
+h3 {
+    font-size: 31px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6, p, a  {
+    font-size: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.container,
+section .wp-block-group__inner-container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*HEADER*/
+
+.brand {
+    padding-top: 25px;
+}
+
+.brand, .social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.toggle-nav {
+    position: absolute;
+    right: 23px;
+    top: 32px;
+    padding: 5px 9px;
+    display: block !important;
+    color: #E62337;
+    transition: color linear 0.15s;
+}
+
+body.admin-bar .toggle-nav {
+    top: 57px;
+}
+
+.toggle-nav span{
+    position: absolute;
+    background-color: #E62337;
+    border-radius: 10px;
+    right: 0;
+    width: 75%;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.toggle-nav__first {
+    top: 4px;
+}
+
+.toggle-nav__second {
+    top: 12px;
+}
+
+.toggle-nav::before,
+.toggle-nav::after{
+    content: '';
+    background-color: #E62337;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.toggle-nav::before{
+    top: 0;
+}
+.toggle-nav::after{
+    bottom: 0;
+}
+.toggle-nav.open span{
+    width: 0;
+    transition: width 0s;
+}
+.toggle-nav.open::before{
+    transform: rotate(45deg);
+    top: 4px;
+}
+.toggle-nav.open::after{
+    transform: rotate(-45deg);
+    bottom: 4px;
+}
+
+.toggle-nav:hover, .toggle-nav.active {
+    text-decoration: none;
+    color: #E62337;
+}
+
+body.admin-bar .nav-block {
+    top: 100px;
+}
+
+.nav-block {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 65px;
+    left: 0;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.nav-block.open {
+    height: 100vh;
+}
+
+.menu-menu-container {
+    padding-top: 50px;
+}
+
+.menu-menu-container ul {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    padding: 0;
+}
+
+.menu-menu-container li {
+    display: block;
+    float: none;
+    padding: 10px 0;
+}
+
+.menu-menu-container a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.social-block {
+    gap: 34px;
+    padding: 10px;
+}
+
+.social-block a{
+    margin: 0;
+}
+
+.footer-container .social-block {
+    gap: 14px;
+    padding-left: 0;
+}
+
+.wrapper-mame {
+    text-align: center;
+}
+
+
+.wrapper-mame h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right,#0057b7 50%, #ffd700 50%);
+    /*background-size: auto auto;*/
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+
+/*CONTENT*/

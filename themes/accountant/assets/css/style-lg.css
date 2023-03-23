@@ -1,0 +1,83 @@
+
+h1 {
+    font-size: 177px;
+}
+
+h2 {
+    font-size: 110px;
+}
+
+h3 {
+    font-size: 68px;
+}
+
+h4 {
+    font-size: 42px;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+p, a {
+    font-size: 21px;
+}
+
+/*HEADER*/
+
+.brand {
+    padding-top: 0;
+}
+
+.menu-container {
+    border-bottom: 1px solid rgba(18,18,18,0.1);
+    align-items: center;
+}
+
+.toggle-nav {
+    display: none !important;
+}
+
+.nav-block {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    top: 0;
+}
+
+.nav-block a {
+    font-size: 14px;
+}
+
+body.admin-bar .nav-block {
+    top: 0;
+}
+
+.menu-menu-container {
+    padding-top: 0;
+}
+
+.menu-menu-container ul {
+    flex-direction: row;
+}
+
+.menu-menu-container li {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.menu-menu-container li a:hover {
+    font-weight: 700;
+}
+
+.social-block {
+    gap: 14px;
+    padding: 29px 0 29px 44px;
+}
+
+
+
+
+/*CONTENT*/

@@ -1,0 +1,135 @@
+/*
+Theme Name:   Accountant
+Theme URI:
+Description: Theme for accountant
+Author:      Anton
+Author URI:
+Version:      1.0.1
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:  accountant
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #010101;
+
+}
+
+.entry-content > * {
+
+    /* Reset alignleft and alignright margins after alignfull */
+}
+
+.entry-content > *.alignleft,
+.entry-content > *.alignright,
+.entry-content > *.alignleft:first-child + *,
+.entry-content > *.alignright:first-child + *,
+.entry-content > *.alignfull.has-background {
+    margin-top: 0;
+}
+
+.entry-content > *:last-child,
+.entry-content > *.alignfull.has-background {
+    margin-bottom: 0;
+}
+
+.entry-content > *.alignfull + .alignleft,
+.entry-content > *.alignfull + .alignright {
+    margin-top: var(--global--spacing-vertical);
+}
+
+/**
+ * Reset specific elements to make them easier to style in other contexts.
+ */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Apply generic border-box to all elements.
+ * See:
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+html {
+
+    /* Apply border-box across the entire page. */
+    font-family: IBMPlexSans, sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    scroll-behavior: smooth;
+}
+
+/**
+ * Relax the definition a bit, to allow components to override it manually.
+ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    font-weight: 400;
+    color: #010101;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
