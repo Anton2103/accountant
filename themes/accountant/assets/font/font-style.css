@@ -1,106 +1,36 @@
 
 @font-face {
-    font-family: IBMPlexSerif;
-    src: url(IBMPlexSerif-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSerif;
-    src: url(IBMPlexSerif-Medium.ttf);
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-Bold.ttf);
+    font-family: Montserrat;
+    src: url(Montserrat-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-BoldItalic.ttf);
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-ExtraLight.ttf);
-    font-weight: 200;
+    font-family: Montserrat;
+    src: url(Montserrat-SemiBold.ttf);
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-ExtraLightItalic.ttf);
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-Light.ttf);
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-LightItalic.ttf);
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-Medium.ttf);
+    font-family: Montserrat;
+    src: url(Montserrat-Medium.ttf);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-MediumItalic.ttf);
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-Regular.ttf);
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.ttf);
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-SemiBold.ttf);
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-SemiBoldItalic.ttf);
-    font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-Thin.ttf);
-    font-weight: 100;
+    font-family: Montserrat;
+    src: url(Montserrat-Light.ttf);
+    font-weight: 300;
     font-style: normal;
-}
-
-@font-face {
-    font-family: IBMPlexSans;
-    src: url(IBMPlexSans-ThinItalic.ttf);
-    font-weight: 100;
-    font-style: italic;
 }
 

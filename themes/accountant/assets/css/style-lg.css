@@ -4,15 +4,15 @@ h1 {
 }
 
 h2 {
-    font-size: 110px;
+    font-size: 64px;
 }
 
 h3 {
-    font-size: 68px;
+    font-size: 54px;
 }
 
 h4 {
-    font-size: 42px;
+    font-size: 32px;
 }
 
 h5 {
@@ -20,7 +20,7 @@ h5 {
 }
 
 p, a {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 /*HEADER*/
@@ -78,6 +78,18 @@ body.admin-bar .nav-block {
 }
 
 
-
-
 /*CONTENT*/
+
+#face .has-background {
+    padding-right: 74px;
+    padding-bottom: 0;
+}
+
+#face h3 {
+    line-height: 66px;
+}
+
+#face h4 {
+    line-height: 52px;
+    padding-top: 20px;
+}

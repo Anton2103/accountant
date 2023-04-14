@@ -5,34 +5,31 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6, span, p, a {
-    font-family: IBMPlexSerif, sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.5;
     font-style: normal;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 49px;
+    font-size: 60px;
 }
 
 h2 {
-    font-size: 39px;
+    font-size: 54px;
 }
 
 h3 {
-    font-size: 31px;
+    font-size: 24px;
 }
 
 h4 {
-    font-size: 25px;
-}
-
-h5 {
     font-size: 20px;
 }
 
+
 h6, p, a  {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .full-width {
@@ -196,31 +193,29 @@ body.admin-bar .nav-block {
     padding-left: 0;
 }
 
-.wrapper-mame {
-    text-align: center;
-}
-
-
-.wrapper-mame h5 {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: linear-gradient(to right,#0057b7 50%, #ffd700 50%);
-    /*background-size: auto auto;*/
-    background-clip: border-box;
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3.5s linear infinite;
-    display: inline-block;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
-
-
 
 /*CONTENT*/
+
+#face img {
+    display: block;
+    margin: 0 auto;
+}
+
+#face .wp-block-columns {
+    padding-bottom: 0;
+}
+
+#face .wp-block-image {
+    margin-bottom: 0;
+}
+
+#face .has-background {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#face h4 {
+    font-weight: 300;
+    line-height: 28px;
+    padding-top: 15px;
+}
