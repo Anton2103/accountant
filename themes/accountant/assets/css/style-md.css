@@ -22,3 +22,59 @@
 /*p, a {*/
 /*    font-size: 19px;*/
 /*}*/
+
+
+/*CONTENT*/
+
+/* FACE */
+
+#face .photo_lg {
+    display: block;
+}
+
+#face .wp-block-columns {
+    padding-bottom: 0;
+}
+
+/* ABOUT_US */
+
+#about_us {
+    display: block;
+}
+
+#about_us h4 {
+    padding: 5px 0 20px;
+    font-weight: 400;
+}
+
+#about_us p {
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* ABOUT_US_MOB */
+
+#about_us_mob  {
+    display: none;
+}
+
+/* RESULTS */
+
+#results .wp-block-columns.has-background {
+    flex-direction: row-reverse;
+}
+
+#results .wp-block-column h3,
+#results .wp-block-column p {
+    width: 80%;
+}
+
+
+#results .experience {
+    margin-top: 35px;
+    margin-left: -35px;
+}
+
+#results .customers {
+    margin-left: -35px;
+}

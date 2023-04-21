@@ -119,8 +119,8 @@
         },
         {
             "key": "field_641c3a2623a89",
-            "label": "",
-            "name": "",
+            "label": "Phone number",
+            "name": "phone_number",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -156,5 +156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679571661
+    "modified": 1681482750
 }
