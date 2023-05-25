@@ -26,5 +26,5 @@
         <?php $phone = get_field('phone_number', 'option'); ?>
         <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
     </div>
-    </div>
+
 </div>

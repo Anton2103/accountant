@@ -65,12 +65,13 @@ section .wp-block-group__inner-container {
     height: 66px;
 }
 
-.brand {
-    /*padding-top: 25px;*/
+.site-logo {
+    padding-top: 10px;
 }
 
-.site-logo  img{
-    height: 36px;
+.site-logo  img {
+    height: 46px;
+    width: 100%;
 }
 
 .brand, .social-block {
@@ -79,19 +80,14 @@ section .wp-block-group__inner-container {
     align-items: center;
 }
 
-#site-header .social-block img {
-    width: 30px;
-}
-
 .menu-container {
     display: flex;
-    /*justify-content: space-between;*/
 }
 
 .toggle-nav {
     position: absolute;
-    right: 23px;
-    top: 32px;
+    right: 20px;
+    top: 28px;
     padding: 5px 9px;
     display: block !important;
     color: #E62337;
@@ -104,7 +100,7 @@ body.admin-bar .toggle-nav {
 
 .toggle-nav span{
     position: absolute;
-    background-color: #E62337;
+    background-color: #010101;
     border-radius: 10px;
     right: 0;
     width: 75%;
@@ -123,7 +119,7 @@ body.admin-bar .toggle-nav {
 .toggle-nav::before,
 .toggle-nav::after{
     content: '';
-    background-color: #E62337;
+    background-color: #010101;
     position: absolute;
     border-radius: 10px;
     width: 100%;
@@ -179,12 +175,15 @@ body.admin-bar .nav-block {
 }
 
 .menu-menu-container {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
 }
 
 .menu-menu-container ul {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
     position: inherit;
     padding: 0;
 }
@@ -196,9 +195,19 @@ body.admin-bar .nav-block {
 }
 
 .menu-menu-container a {
+    color: #010101;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
+    white-space: nowrap;
+}
+
+.tel {
+
+}
+
+#site-header .social-block {
+    padding-top: 30px;
 }
 
 .social-block {
@@ -208,6 +217,10 @@ body.admin-bar .nav-block {
 
 .social-block a{
     margin: 0;
+}
+
+.header-contacts {
+    padding-top: 70px;
 }
 
 .footer-container .social-block {
@@ -360,6 +373,196 @@ body.admin-bar .nav-block {
     width: 100%;
     border-radius: 10px;
 }
+
+.wp-block-getwid-counter__number,
+.wp-block-getwid-progress-bar__percent {
+    font-size: 54px;
+    font-weight: 600;
+}
+
+
+/* SERVICES */
+
+
+#services h3 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper a {
+    color: #010101;
+}
+
+#services .wp-block-columns {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper {
+    margin-top: 15px;
+}
+
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper h4 {
+   padding: 15px;
+   text-decoration: none;
+}
+
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper,
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__content {
+    border: none;
+}
+
+#services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px
+}
+
+#services .wp-block-getwid-accordion__content {
+    padding: 20px;
+}
+
+#services .wp-block-getwid-accordion__content li {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/* POST SLIDER */
+
+.slider-wrapper {
+
+}
+
+.slider-item {
+    background: #F7F7F7;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+}
+
+.slider-img img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.slider-title {
+    padding: 10px 0;
+}
+
+.slider-title p {
+    font-size: 21px;
+}
+
+.slider-content p {
+    font-size: 14px;
+}
+
+.excerpt_more {
+    color: #010101;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+    top: auto;
+    bottom: 0;
+    transform: none;
+    width: 42px;
+    height: 42px;
+    z-index: 1;
+}
+
+.slick-arrow.slick-next {
+    right: 20px;
+}
+
+.slick-arrow.slick-prev {
+    left: 15px;
+}
+
+.slick-arrow.slick-next:before,
+.slick-arrow.slick-prev:before {
+    font-size: 40px;
+    opacity: 1;
+    color: #010101;
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: 0.25;
+}
+
+/* Слайдер */
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+    margin: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    margin: 0 -27px;
+
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{
+    padding-bottom: 50px;
+    margin: 0 27px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    bottom: 0;
+}
+.slick-dots li{
+    list-style: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+
+
+
 
 
 

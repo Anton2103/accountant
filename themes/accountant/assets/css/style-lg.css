@@ -75,11 +75,24 @@ body.admin-bar .nav-block {
     font-weight: 700;
 }
 
+.header-contacts {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#site-header .social-block {
+    gap: 20px;
+}
+
 .social-block {
     gap: 30px;
     padding: 29px 0 29px 44px;
 }
 
+#site-header .social-block img {
+    width: 30px;
+}
 
 /*CONTENT*/
 
@@ -95,4 +108,47 @@ body.admin-bar .nav-block {
 #face h4 {
     line-height: 52px;
     padding-top: 20px;
+}
+
+
+/* RESULTS */
+
+.wp-block-getwid-counter__number,
+.wp-block-getwid-progress-bar__percent {
+    font-size: 64px;
+}
+
+
+
+/* SERVICES */
+
+
+
+/* POST SLIDER */
+
+.blog-wrapper {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+    top: -60px;
+    bottom: auto;
+}
+
+.slick-arrow.slick-next {
+    right: 17px;
+}
+
+.slick-arrow.slick-prev {
+    right: 68px;
+    left: auto;
+}
+
+.slick-list {
+    height: 650px;
+}
+
+.slick-slide {
 }

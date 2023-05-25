@@ -6,17 +6,17 @@
 }
 
 .phone-btn {
-    display: block;
-    text-align: center;
+    display: flex;
     background: #010101;
-    padding: 8px;
     width: 230px;
+    height: 52px;
     border-radius: 10px;
     margin: 10px auto 0 auto;
 }
 
 .phone-btn a {
     color: #ffffff;
+    margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,5 +30,10 @@
 
     .phone-btn {
         margin: 0 0 0 30px;
+    }
+
+    #site-header .phone-btn {
+        height: 30px;
+        width: 155px;
     }
 }

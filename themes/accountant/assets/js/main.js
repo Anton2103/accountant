@@ -28,6 +28,26 @@
 
         $a.trigger('click');
 
+
+        $('.slider').slick({
+            dots: false,
+            autoplay: false,
+            speed: 1000,
+            slidesToShow: 4,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                        dots: true,
+                        centerMode: false,
+                    }
+                },
+            ]
+        });
+
     });
 
 })(jQuery);

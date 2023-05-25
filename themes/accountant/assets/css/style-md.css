@@ -26,6 +26,10 @@
 
 /*CONTENT*/
 
+.phone-btn {
+    pointer-events: none;
+}
+
 /* FACE */
 
 #face .photo_lg {
@@ -78,3 +82,7 @@
 #results .customers {
     margin-left: -35px;
 }
+
+
+/* SLIDER */
+

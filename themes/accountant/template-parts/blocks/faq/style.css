@@ -1,0 +1,98 @@
+
+#faq_section h3 {
+    padding: 0 0 30px 20px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.accordion-item {
+    width: 100%;
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 15px 20px;
+
+}
+
+#faq_section .accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#faq_section .accordion-title p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#faq_section .accordion-content {
+    display: none;
+    padding-top: 10px;
+}
+
+#faq_section .accordion-content p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+[class^="ic-"], [class*=" ic-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: Montserrat, sans-serif;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-plus:before {
+    content: "\002b";
+}
+
+@media (min-width: 768px) {
+
+
+    .accordion {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .accordion-item {
+        width: 49%;
+        padding: 20px;
+    }
+
+    .accordion-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .accordion-item .accordion-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        gap: 20px;
+    }
+
+    .accordion-item .accordion-title span {
+        font-size: 24px;
+    }
+
+    .accordion-item .accordion-content {
+        display: none;
+        margin-top: 20px;
+    }
+
+}

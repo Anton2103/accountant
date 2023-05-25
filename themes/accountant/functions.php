@@ -6,6 +6,9 @@ use Service\Gutenberg;
 use Service\TaxonomyCreator;
 use Service\PostTypeCreator;
 use Entity\YourBlog;
+use Entity\Faq;
+use Inc\ImagesSettings;
+
 
 ################################################################################
 # Constants
@@ -61,8 +64,7 @@ Gutenberg::init();
 ################################################################################
 
 add_action('init', function() {
-    YourBlog::init(__('Your Blog','accountant'),__('Your Blogs','accountant'));
-
+    Faq::init(__('FAQ', 'accountant'), __('FAQs', 'accountant'));
 },-999);
 
 // Init
