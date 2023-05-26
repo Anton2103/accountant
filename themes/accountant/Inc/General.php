@@ -145,7 +145,7 @@ class General
 	 * @return int
 	 */
 	function new_excerpt_length($length) {
-		return 20;
+		return 15;
 	}
 
 	function new_excerpt_more( $more ){

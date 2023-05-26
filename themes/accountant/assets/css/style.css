@@ -281,7 +281,7 @@ body.admin-bar .nav-block {
 }
 
 #about_us_mob .slick-list {
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
 }
 
 #about_us_mob {
@@ -299,7 +299,7 @@ body.admin-bar .nav-block {
 }
 
 #about_us_mob .slick-dotted.slick-slider {
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
 }
 
 #about_us_mob .slick-dots {
@@ -434,6 +434,10 @@ body.admin-bar .nav-block {
 }
 
 /* POST SLIDER */
+
+#blog h3 {
+     padding: 0 0 30px 20px;
+}
 
 .slider-wrapper {
 

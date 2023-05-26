@@ -114,6 +114,48 @@
                     "ui_on_text": "",
                     "ui_off_text": "",
                     "parent_repeater": "field_64146a80aeca6"
+                },
+                {
+                    "key": "field_64709120dc7f3",
+                    "label": "Social name",
+                    "name": "social_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64146a80aeca6"
+                },
+                {
+                    "key": "field_647098c7dc7f4",
+                    "label": "Social context",
+                    "name": "social_context",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64146a80aeca6"
                 }
             ]
         },
@@ -156,5 +198,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681482750
+    "modified": 1685100791
 }
