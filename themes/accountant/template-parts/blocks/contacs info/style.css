@@ -1,5 +1,5 @@
 
-.contacts-wrapper {
+#contactsInf .contacts-wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 15px;

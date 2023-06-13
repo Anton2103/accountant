@@ -2,6 +2,7 @@
 
 section {
     padding: 25px 0;
+    scroll-margin: 85px;
 }
 
 h1, h2, h3, h4, h5, h6, span, p, a {
@@ -49,6 +50,10 @@ section .wp-block-group__inner-container {
     justify-content: center;
 }
 
+.wp-block-columns {
+    margin-bottom: 0;
+}
+
 /*HEADER*/
 
 #site-header {
@@ -62,7 +67,7 @@ section .wp-block-group__inner-container {
 
 #site-header .container {
     background: #ffffff;
-    height: 66px;
+    height: 85px;
 }
 
 .site-logo {
@@ -153,7 +158,7 @@ body.admin-bar .toggle-nav {
 }
 
 body.admin-bar .nav-block {
-    top: 100px;
+    /*top: 110px;*/
 }
 
 .nav-block {
@@ -162,7 +167,7 @@ body.admin-bar .nav-block {
     position: absolute;
     width: 100%;
     height: 0;
-    top: 65px;
+    top: 70px;
     left: 0;
     text-align: center;
     background: #fff;
@@ -202,8 +207,18 @@ body.admin-bar .nav-block {
     white-space: nowrap;
 }
 
-.tel {
+.phone-btn {
+    display: flex;
+    background: #010101;
+    width: 230px;
+    height: 52px;
+    border-radius: 10px;
+    margin: 10px auto 0 auto;
+}
 
+.phone-btn a {
+    color: #ffffff;
+    margin: auto;
 }
 
 #site-header .social-block {
@@ -215,8 +230,9 @@ body.admin-bar .nav-block {
     padding: 10px;
 }
 
-.social-block a{
+.social-block a {
     margin: 0;
+    line-height: inherit;
 }
 
 .header-contacts {
@@ -348,7 +364,7 @@ body.admin-bar .nav-block {
 }
 
 #results .wp-block-column.is-layout-flow p {
-    padding-top: 15px;
+    padding: 15px 0 0;
 }
 
 #results .wp-block-columns.is-layout-flex,
@@ -433,9 +449,27 @@ body.admin-bar .nav-block {
     padding-bottom: 10px;
 }
 
+/* Blog Single-post */
+
+.blog-wrapper {
+    padding: 20px;
+}
+
+.blog-content {
+    padding: 30px 0;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
 /* POST SLIDER */
 
-#blog h3 {
+#blog h3,
+#contactsInf h3 {
      padding: 0 0 30px 20px;
 }
 
@@ -527,9 +561,9 @@ body.admin-bar .nav-block {
     align-items: flex-start;
 }
 /* Слайд */
-.slick-slide{
+.slick-slide {
     padding-bottom: 50px;
-    margin: 0 27px;
+    margin: 0 20px;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
@@ -563,6 +597,44 @@ body.admin-bar .nav-block {
 /* Элемент точки */
 .slick-dots li button{}
 
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background: #010101;
+}
+
+.footer-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.footer-container span {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.privacy-policy {
+    position: relative;
+    line-height: 10px;
+}
+
+.footer-container .privacy-policy a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 
 

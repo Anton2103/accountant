@@ -32,9 +32,9 @@ define('VENDORDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'vendor');
 define('ADMINDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'Admin');
 define('ADMINURI', THEMEURL . '/Admin');
 
-define('VERSION', $version ?? '0.0.1');
+define('VERSION', $version ?? '0.0.2');
 
-define('ASSETS_VERSION', '0.0.1');
+define('ASSETS_VERSION', '0.0.2');
 
 ################################################################################
 # Load the translations from the child theme if present

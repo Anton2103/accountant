@@ -38,9 +38,12 @@
 
                             if ($active_social == 'true'):
                                 ?>
+                            <div class="social-block__img-shadow">
                                 <a href="<?php echo $url_social; ?>" target="_blank" >
                                     <img src="<?php echo $icon_social_header; ?>" alt="<?php echo $url_social; ?>">
                                 </a>
+                            </div>
+
                             <?php
                             endif;
                         endwhile;

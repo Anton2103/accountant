@@ -1,6 +1,6 @@
 
 section {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 h1 {
@@ -51,7 +51,7 @@ p, a {
 }
 
 .nav-block a {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 body.admin-bar .nav-block {
@@ -81,18 +81,30 @@ body.admin-bar .nav-block {
     padding: 0;
 }
 
+.phone-btn {
+    margin: 0 0 0 30px
+}
+
 #site-header .social-block {
     gap: 20px;
 }
 
-.social-block {
+#site-header .social-block {
     gap: 30px;
-    padding: 29px 0 29px 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 45px;
 }
 
-#site-header .social-block img {
-    width: 30px;
+.social-block__img-shadow {
+    border-radius: 50%;
+    height: 52px;
 }
+
+.social-block__img-shadow:hover {
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
 
 /*CONTENT*/
 
@@ -118,6 +130,10 @@ body.admin-bar .nav-block {
     font-size: 64px;
 }
 
+#results .wp-block-column.is-layout-flow p {
+    padding: 15px 0 15px;
+}
+
 
 
 /* SERVICES */
@@ -131,6 +147,26 @@ body.admin-bar .nav-block {
 .blog-wrapper {
     max-width: 1512px;
     margin: 0 auto;
+}
+
+.blog-content {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.blog-content__img {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.blog-content__text {
+    margin-top: 0;
+}
+
+.slick-slide{
+    padding-bottom: 0;
+    margin: 0 10px;
 }
 
 .slick-arrow.slick-next,
@@ -148,9 +184,9 @@ body.admin-bar .nav-block {
     left: auto;
 }
 
-.slick-list {
-    height: 650px;
-}
 
-.slick-slide {
+/* Contacts inf*/
+
+#contactsInf .wp-block-getwid-map .wp-block-getwid-map__container {
+    height: 600px !important;
 }

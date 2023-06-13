@@ -24,18 +24,24 @@ get_header(); ?>
 <div class="blog-wrapper">
     <div class="blog">
         <h3><?php the_title() ?></h3>
-	    <?php if ( '' !== get_the_post_thumbnail()) : ?>
-            <div class="post-thumbnail">
-			    <?php the_post_thumbnail('medium'); ?>
-            </div><!-- .post-thumbnail -->
-	    <?php endif; ?>
-        <p><?php the_content(); ?></p>
+
+        <div class="blog-content">
+	        <?php if ( '' !== get_the_post_thumbnail()) : ?>
+                <div class="blog-content__img post-thumbnail">
+			        <?php the_post_thumbnail('medium'); ?>
+                </div><!-- .post-thumbnail -->
+	        <?php endif; ?>
+            <p class="blog-content__text"><?php the_content(); ?></p>
+        </div>
+
     </div>
-	        <?php
-                $args = array('posts_per_page' => 23);
-                $lastposts = get_posts($args);
-	        get_template_part( 'template-parts/slick', 'slider', ['posts_slider' => $lastposts] );
-            ?>
+    <div class="blog-slider">
+	    <?php
+            $args = array('posts_per_page' => 23);
+            $lastposts = get_posts($args);
+            get_template_part( 'template-parts/slick', 'slider', ['posts_slider' => $lastposts] );
+	    ?>
+    </div>
 </div>
 
 <?php

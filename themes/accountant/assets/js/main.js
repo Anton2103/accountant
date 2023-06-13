@@ -31,7 +31,7 @@
 
         $('.slider').slick({
             dots: false,
-            autoplay: false,
+            autoplay: true,
             speed: 1000,
             slidesToShow: 4,
             infinite: true,

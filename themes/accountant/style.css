@@ -4,7 +4,7 @@ Theme URI:
 Description: Theme for accountant
 Author:      Anton
 Author URI:
-Version:      1.0.1
+Version:      1.0.2
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
@@ -73,6 +73,13 @@ h6 {
     -webkit-font-smoothing: antialiased;
 }
 
+p {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
 /**
  * Apply generic border-box to all elements.
  * See:
@@ -83,7 +90,7 @@ html {
     /* Apply border-box across the entire page. */
     font-family: IBMPlexSans, sans-serif;
     font-weight: 400;
-    line-height: 36px;
+    /*line-height: 36px;*/
     scroll-behavior: smooth;
 }
 

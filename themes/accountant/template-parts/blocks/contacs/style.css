@@ -5,19 +5,23 @@
     padding-top: 15px;
 }
 
-.phone-btn {
-    display: flex;
-    background: #010101;
-    width: 230px;
-    height: 52px;
-    border-radius: 10px;
-    margin: 10px auto 0 auto;
+/*.phone-btn {*/
+/*    display: flex;*/
+/*    background: #010101;*/
+/*    width: 230px;*/
+/*    height: 52px;*/
+/*    border-radius: 10px;*/
+/*    margin: 10px auto 0 auto;*/
+/*}*/
+
+.phone-btn:hover {
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.phone-btn a {
-    color: #ffffff;
-    margin: auto;
-}
+/*.phone-btn a {*/
+/*    color: #ffffff;*/
+/*    margin: auto;*/
+/*}*/
 
 @media screen and (min-width: 768px) {
     .contacts-wrapper {
@@ -28,12 +32,9 @@
         padding: 0;
     }
 
-    .phone-btn {
-        margin: 0 0 0 30px;
-    }
+    /*.phone-btn {*/
+    /*    margin: 0 0 0 30px;*/
+    /*}*/
 
-    #site-header .phone-btn {
-        height: 30px;
-        width: 155px;
-    }
+
 }

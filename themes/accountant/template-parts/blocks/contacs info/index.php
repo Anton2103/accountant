@@ -6,8 +6,9 @@
     <div class="phone-contacts">
         <div class="socials__text">
             <?php $phone = get_field('phone_number', 'option'); ?>
+            <?php $phone_name = get_field('phone_name', 'option'); ?>
             <p class="socials__header">Зателефонуйте</p>
-            <p class="socials__context"><?php echo $phone; ?></p>
+            <p class="socials__context"><?php echo $phone_name; ?></p>
         </div>
 
         <div class="socials__link">
@@ -30,12 +31,12 @@
                         ?>
                         <div class="socials__text">
                             <p class="socials__header"><?php echo $social_name ?></p>
-                            <p class="socials__context"><?php echo $social_context?></p>
+                            <p class="socials__context" ><?php echo $social_context?></p>
                         </div>
                         <div class="socials__link">
                             <img src="<?php echo $social_icon_footer; ?>" alt="<?php echo $url_social; ?>">
-                            <span><?php echo  $social_name?></span>
-                            <a href="<?php echo $url_social; ?>" target="_blank"></a>
+                            <span><?php echo  $social_name; ?></span>
+                            <a href="<?php echo $url_social; ?>" target="_blank"> </a>
                         </div>
                     <?php
                     endif;
