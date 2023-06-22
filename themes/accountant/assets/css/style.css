@@ -13,11 +13,11 @@ h1, h2, h3, h4, h5, h6, span, p, a {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 32px;
 }
 
 h2 {
-    font-size: 54px;
+    font-size: 28px;
 }
 
 h3 {
@@ -66,7 +66,7 @@ section .wp-block-group__inner-container {
 }
 
 #site-header .container {
-    background: #ffffff;
+    background: var(--white);
     height: 85px;
 }
 
@@ -105,7 +105,7 @@ body.admin-bar .toggle-nav {
 
 .toggle-nav span{
     position: absolute;
-    background-color: #010101;
+    background-color: var(--black);
     border-radius: 10px;
     right: 0;
     width: 75%;
@@ -124,7 +124,7 @@ body.admin-bar .toggle-nav {
 .toggle-nav::before,
 .toggle-nav::after{
     content: '';
-    background-color: #010101;
+    background-color: var(--black);
     position: absolute;
     border-radius: 10px;
     width: 100%;
@@ -170,7 +170,7 @@ body.admin-bar .nav-block {
     top: 70px;
     left: 0;
     text-align: center;
-    background: #fff;
+    background: var(--white);
     overflow: hidden;
     transition: height 0.5s;
 }
@@ -200,7 +200,7 @@ body.admin-bar .nav-block {
 }
 
 .menu-menu-container a {
-    color: #010101;
+    color: var(--black);
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
@@ -209,7 +209,7 @@ body.admin-bar .nav-block {
 
 .phone-btn {
     display: flex;
-    background: #010101;
+    background: var(--black);
     width: 230px;
     height: 52px;
     border-radius: 10px;
@@ -217,7 +217,7 @@ body.admin-bar .nav-block {
 }
 
 .phone-btn a {
-    color: #ffffff;
+    color: var(--white);
     margin: auto;
 }
 
@@ -281,6 +281,30 @@ body.admin-bar .nav-block {
 #face .wp-block-columns.has-background {
     gap: 0;
 }
+
+#face .face-mob {
+    display: block;
+}
+
+#face .face-mob img {
+    height: 240px;
+}
+
+#face .social-block {
+    flex-direction: column;
+}
+
+#face .phone-btn {
+    width: 100%;
+}
+
+#face h3,
+#face h4 {
+    line-height: 1;
+}
+
+
+
 
 /* ABOUT_US */
 
@@ -363,8 +387,10 @@ body.admin-bar .nav-block {
     margin: 0;
 }
 
-#results .wp-block-column.is-layout-flow p {
+#results .wp-block-column.is-layout-flow p,
+#face .wp-block-column.is-layout-flow p {
     padding: 15px 0 0;
+    word-break: keep-all;
 }
 
 #results .wp-block-columns.is-layout-flex,
@@ -384,7 +410,7 @@ body.admin-bar .nav-block {
 }
 
 .experience, .reports, .customers, .taxes {
-    background: white;
+    background: var(--white);
     padding: 15px 20px;
     width: 100%;
     border-radius: 10px;
@@ -406,7 +432,7 @@ body.admin-bar .nav-block {
 }
 
 #services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper a {
-    color: #010101;
+    color: var(--black);
 }
 
 #services .wp-block-columns {
@@ -430,7 +456,7 @@ body.admin-bar .nav-block {
 }
 
 #services .wp-block-getwid-accordion .wp-block-getwid-accordion__header-wrapper {
-    background: #ffffff;
+    background: var(--white);
     border-radius: 20px;
     padding: 15px
 }
@@ -464,6 +490,11 @@ body.admin-bar .nav-block {
     height: auto;
     padding: 10px 0;
     border-radius: 10px;
+}
+
+.blog-content__text p {
+    text-indent: 30px;
+    margin-bottom: 15px;
 }
 
 /* POST SLIDER */
@@ -507,7 +538,7 @@ body.admin-bar .nav-block {
 }
 
 .excerpt_more {
-    color: #010101;
+    color: var(--black);
 }
 
 .slick-arrow.slick-next,
@@ -532,7 +563,7 @@ body.admin-bar .nav-block {
 .slick-arrow.slick-prev:before {
     font-size: 40px;
     opacity: 1;
-    color: #010101;
+    color: var(--black);
 }
 
 .slick-next.slick-disabled:before,
@@ -606,8 +637,8 @@ body.admin-bar .nav-block {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 80px;
-    background: #010101;
+    height: 100px;
+    background: var(--black);
 }
 
 .footer-inf {
@@ -615,11 +646,12 @@ body.admin-bar .nav-block {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
+    width: 140px;
 }
 
 .footer-container span {
-    color: #ffffff;
-    font-size: 10px;
+    color: var(--white);
+    font-size: 14px;
 }
 
 .privacy-policy {
@@ -636,6 +668,26 @@ body.admin-bar .nav-block {
     z-index: 1;
 }
 
+/* 404 page */
+
+.error-404 {
+    padding: 80px 20px 20px;
+}
+
+.accountant-404 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.accountant-404 p {
+    text-indent: 30px;
+}
+
+.accountant-404 .accountant-404--home {
+    padding: 20px 0;
+    text-align: center;
+    text-indent: 0;
+}
 
 
 

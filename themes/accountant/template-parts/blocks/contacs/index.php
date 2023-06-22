@@ -1,8 +1,11 @@
 <?php
-
+$face_mobile = get_field('face_mobile', 'option');
 ?>
 
 <div class="contacts-wrapper">
+    <div class="face-mob">
+        <img src="<?php echo $face_mobile ?>" alt="">
+    </div>
     <div class="social-block contacts">
 		<?php
 
@@ -35,5 +38,10 @@
 		echo $phone; ?>"><?php
 			echo $phone; ?></a>
     </div>
-
+</div>
+<div class="user-name">
+    <?php
+    $phone_name = get_field('phone_name', 'option');
+    ?>
+    <p><?php echo $phone_name; ?></p>
 </div>

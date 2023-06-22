@@ -4,8 +4,6 @@
 $footer_logo = get_field('footer_logo', 'option');
 ?>
 
-<!--<footer id="site-footer" class="footer" role="banner">-->
-
     <div class="footer-container">
         <div class="footer-inf">
             <div class="privacy-policy">

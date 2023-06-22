@@ -19,22 +19,24 @@ get_header(); ?>
 <?php if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
     <header class="page-header alignwide">
         <h1 class="page-title"><?php single_post_title(); ?></h1>
-    </header><!-- .page-header -->
+    </header>
 <?php endif; ?>
 <div class="blog-wrapper">
     <div class="blog">
-        <h3><?php the_title() ?></h3>
+        <h1><?php the_title() ?></h1>
 
         <div class="blog-content">
 	        <?php if ( '' !== get_the_post_thumbnail()) : ?>
                 <div class="blog-content__img post-thumbnail">
 			        <?php the_post_thumbnail('medium'); ?>
-                </div><!-- .post-thumbnail -->
+                </div>
 	        <?php endif; ?>
-            <p class="blog-content__text"><?php the_content(); ?></p>
+            <div class="blog-content__text">
+                <?php the_content(); ?>
+            </div>
         </div>
-
     </div>
+
     <div class="blog-slider">
 	    <?php
             $args = array('posts_per_page' => 23);

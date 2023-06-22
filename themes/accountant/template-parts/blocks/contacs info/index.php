@@ -8,7 +8,7 @@
             <?php $phone = get_field('phone_number', 'option'); ?>
             <?php $phone_name = get_field('phone_name', 'option'); ?>
             <p class="socials__header">Зателефонуйте</p>
-            <p class="socials__context"><?php echo $phone_name; ?></p>
+            <p class="socials__context phone-name"><?php echo $phone_name; ?></p>
         </div>
 
         <div class="socials__link">

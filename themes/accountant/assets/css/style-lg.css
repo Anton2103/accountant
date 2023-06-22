@@ -4,7 +4,7 @@ section {
 }
 
 h1 {
-    font-size: 177px;
+    font-size: 70px;
 }
 
 h2 {
@@ -122,6 +122,19 @@ body.admin-bar .nav-block {
     padding-top: 20px;
 }
 
+#face .social-block {
+    flex-direction: row;
+}
+
+#face .phone-btn {
+    width: 230px;
+}
+
+#face h3,
+#face h4 {
+    line-height: 1.5;
+}
+
 
 /* RESULTS */
 
@@ -142,9 +155,13 @@ body.admin-bar .nav-block {
 
 /* POST SLIDER */
 
-
+.slider-wrapper {
+    padding: 0 20px;
+}
 
 .blog-wrapper {
+    display: flex;
+    flex-direction: column;
     max-width: 1512px;
     margin: 0 auto;
 }
@@ -189,4 +206,20 @@ body.admin-bar .nav-block {
 
 #contactsInf .wp-block-getwid-map .wp-block-getwid-map__container {
     height: 600px !important;
+}
+
+/* Footer */
+
+.footer-inf {
+    width: 100%;
+}
+
+/* 404 page */
+.accountant-404 p {
+    text-align: center;
+    text-indent: 0;
+}
+
+.accountant-404 .accountant-404--home {
+    padding: 50px 0;
 }
