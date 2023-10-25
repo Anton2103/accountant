@@ -16,7 +16,9 @@ class Faq extends PostType {
 			'supports'            => ['title', 'editor'],
 			'exclude_from_search' => true,
 			'has_archive'         => false,
-			'hierarchical'        => true,
+			'hierarchical'        => false,
+			'publicly_queryable'  => false,
+			'menu_icon'           => 'dashicons-editor-help',
 		], self::$MACHINE_NAME);
 
 	}

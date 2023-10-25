@@ -17,7 +17,7 @@ $face_mobile = get_field('face_mobile', 'option');
 
 				if ($active_social == 'true'):
 					?>
-                    <div class="social-block__img-shadow">
+                    <div class="social-block__img-shadow button-grow">
                         <a href="<?php
 						echo $url_social; ?>" target="_blank">
                             <img src="<?php
@@ -31,10 +31,10 @@ $face_mobile = get_field('face_mobile', 'option');
 		endif;
 		?>
     </div>
-    <div class="phone-btn">
+    <div class="phone-btn button-grow">
 		<?php
 		$phone = get_field('phone_number', 'option'); ?>
-        <a href="tel:<?php
+        <a class="button-grow" href="tel:<?php
 		echo $phone; ?>"><?php
 			echo $phone; ?></a>
     </div>

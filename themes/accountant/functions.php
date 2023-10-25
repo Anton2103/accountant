@@ -32,9 +32,9 @@ define('VENDORDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'vendor');
 define('ADMINDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'Admin');
 define('ADMINURI', THEMEURL . '/Admin');
 
-define('VERSION', $version ?? '0.0.4');
+define('VERSION', $version ?? '0.0.6');
 
-define('ASSETS_VERSION', '0.0.8');
+define('ASSETS_VERSION', '1.0.0');
 
 ################################################################################
 # Load the translations from the child theme if present
@@ -43,7 +43,6 @@ define('ASSETS_VERSION', '0.0.8');
 add_action('after_setup_theme', function () {
     load_theme_textdomain('accountant', get_stylesheet_directory() . '/languages');
 });
-
 
 ################################################################################
 # Includes
@@ -70,4 +69,3 @@ add_action('init', function() {
 // Init
 TaxonomyCreator::addToInit(); // Taxonomies need to be init before the PostTypes for the correct url structure
 PostTypeCreator::addToInit();
-

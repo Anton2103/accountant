@@ -30,7 +30,7 @@ class ImagesSettings {
             'flex-height' => true,
         ]);
 
-        add_image_size( 'slider', 1076, 550, TRUE );
+        add_image_size( 'slider', 550, 550, TRUE );
         add_image_size( 'mobile-slider', 335, 180, TRUE );
         add_image_size( 'benefits', 280, 198, TRUE );
         add_image_size( 'rate', 440, 600, TRUE );

@@ -22,21 +22,15 @@ get_header(); ?>
     </header>
 <?php endif; ?>
 <div class="blog-wrapper">
-    <div class="blog">
-        <h1><?php the_title() ?></h1>
-
-        <div class="blog-content">
-	        <?php if ( '' !== get_the_post_thumbnail()) : ?>
-                <div class="blog-content__img post-thumbnail">
-			        <?php the_post_thumbnail('medium'); ?>
-                </div>
-	        <?php endif; ?>
-            <div class="blog-content__text">
-                <?php the_content(); ?>
+    <h1><?php the_title() ?></h1>
+    <div class="blog-image">
+		<?php if ( '' !== get_the_post_thumbnail()) : ?>
+            <div class="blog-content__img post-thumbnail slider-img">
+				<?php the_post_thumbnail('slider'); ?>
             </div>
-        </div>
+		<?php endif; ?>
     </div>
-
+    <div class="blog-content"> <?php the_content(); ?></div>
     <div class="blog-slider">
 	    <?php
             $args = array('posts_per_page' => 23);
@@ -45,7 +39,6 @@ get_header(); ?>
 	    ?>
     </div>
 </div>
-
 <?php
 
 get_footer();

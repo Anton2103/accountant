@@ -11,9 +11,9 @@
             <p class="socials__context phone-name"><?php echo $phone_name; ?></p>
         </div>
 
-        <div class="socials__link">
+        <div class="socials__link button-grow">
             <span><?php echo $phone; ?></span>
-            <a href="tel:<?php echo $phone; ?>"></a>
+            <a class="button-grow" href="tel:<?php echo $phone; ?>"></a>
         </div>
     </div>
 
@@ -33,7 +33,7 @@
                             <p class="socials__header"><?php echo $social_name ?></p>
                             <p class="socials__context" ><?php echo $social_context?></p>
                         </div>
-                        <div class="socials__link">
+                        <div class="socials__link button-grow">
                             <img src="<?php echo $social_icon_footer; ?>" alt="<?php echo $url_social; ?>">
                             <span><?php echo  $social_name; ?></span>
                             <a href="<?php echo $url_social; ?>" target="_blank"> </a>

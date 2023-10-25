@@ -27,7 +27,7 @@
 /*CONTENT*/
 
 .phone-btn {
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 /* FACE */
@@ -38,6 +38,16 @@
 
 #face .wp-block-columns {
     padding-bottom: 0;
+}
+
+
+#face .social-block {
+    flex-direction: row;
+}
+
+
+#face .phone-btn {
+    width: 230px;
 }
 
 /* ABOUT_US */
@@ -83,6 +93,21 @@
     margin-left: -35px;
 }
 
+#results .contacts-wrapper {
+    flex-direction: column;
+    align-content: flex-start;
+}
+
 
 /* SLIDER */
 
+/* FOOTER */
+
+.footer-contacts {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-container .button-grow {
+    order: 1;
+}

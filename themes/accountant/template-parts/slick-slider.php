@@ -11,7 +11,7 @@ if ($posts_slider): ?>
 		<div class="slider">
 			<?php foreach ($posts_slider as $post): setup_postdata($post); ?>
 				<div class="slider-item">
-                    <div class="slider-img"><?php the_post_thumbnail(); ?></div>
+                    <div class="slider-img"><?php the_post_thumbnail('slider'); ?></div>
 					<div class="slider-title">
 						<p><?php the_title(); ?></p>
 					</div>

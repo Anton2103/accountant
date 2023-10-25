@@ -23,9 +23,9 @@
             ?>
 
             <div class="header-contacts">
-                <div class="tel phone-btn">
+                <div class="tel phone-btn button-grow">
                     <?php $phone = get_field('phone_number', 'option'); ?>
-                    <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                    <a class="button-grow" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
                 </div>
                 <div class="social-block">
                     <?php
@@ -38,7 +38,7 @@
 
                             if ($active_social == 'true'):
                                 ?>
-                            <div class="social-block__img-shadow">
+                            <div class="social-block__img-shadow button-grow">
                                 <a href="<?php echo $url_social; ?>" target="_blank" >
                                     <img src="<?php echo $icon_social_header; ?>" alt="<?php echo $url_social; ?>">
                                 </a>
@@ -50,8 +50,6 @@
                     endif;
                     ?>
                 </div>
-
-
             </div>
 
         </div>

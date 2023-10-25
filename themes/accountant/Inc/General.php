@@ -151,7 +151,7 @@ class General
 	function new_excerpt_more( $more ){
 		$post = get_post();
 
-		return '<span> ...</span></br></br><a class="excerpt_more" href="'. get_permalink($post->ID) . '">Читати далі...</a>';
+		return '<span> ...</span></br></br><a class="excerpt_more hover-underline-animation" href="'. get_permalink($post->ID) . '">Читати далі...</a>';
 	}
 
 }

@@ -3,8 +3,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> >
 <head>
-    <title>Не витрачай час на податки й звіти - довірся бухгалтеру!</title>
-    <meta name="description" content="Надаємо широкий спектр бухгалтерських послуг: від консультування до повного супроводу діяльності вашого бізнесу." />
+    <title><?php the_title() ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no"/>
@@ -19,6 +18,17 @@
         })(window,document,'script','dataLayer','GTM-N8732V6');
     </script>
     <!-- End Google Tag Manager -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6075184775985810" crossorigin="anonymous">
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFGKE9D1BM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZFGKE9D1BM');
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
