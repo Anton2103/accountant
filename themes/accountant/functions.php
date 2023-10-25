@@ -6,6 +6,9 @@ use Service\Gutenberg;
 use Service\TaxonomyCreator;
 use Service\PostTypeCreator;
 use Entity\YourBlog;
+use Entity\Faq;
+use Inc\ImagesSettings;
+
 
 ################################################################################
 # Constants
@@ -29,9 +32,9 @@ define('VENDORDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'vendor');
 define('ADMINDIR', THEMEDIR . DIRECTORY_SEPARATOR . 'Admin');
 define('ADMINURI', THEMEURL . '/Admin');
 
-define('VERSION', $version ?? '0.0.1');
+define('VERSION', $version ?? '0.0.6');
 
-define('ASSETS_VERSION', '0.0.1');
+define('ASSETS_VERSION', '1.0.0');
 
 ################################################################################
 # Load the translations from the child theme if present
@@ -40,7 +43,6 @@ define('ASSETS_VERSION', '0.0.1');
 add_action('after_setup_theme', function () {
     load_theme_textdomain('accountant', get_stylesheet_directory() . '/languages');
 });
-
 
 ################################################################################
 # Includes
@@ -61,11 +63,9 @@ Gutenberg::init();
 ################################################################################
 
 add_action('init', function() {
-    YourBlog::init(__('Your Blog','accountant'),__('Your Blogs','accountant'));
-
+    Faq::init(__('FAQ', 'accountant'), __('FAQs', 'accountant'));
 },-999);
 
 // Init
 TaxonomyCreator::addToInit(); // Taxonomies need to be init before the PostTypes for the correct url structure
 PostTypeCreator::addToInit();
-

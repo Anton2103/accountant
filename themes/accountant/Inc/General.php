@@ -33,6 +33,8 @@ class General
         add_action('init', [$this, 'registerStyles']);
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
 
+	    add_theme_support('post-thumbnails');
+
         ################################################################################
         # Settings
         ################################################################################
@@ -59,7 +61,21 @@ class General
 //         Add support for Block Styles.
         add_theme_support( 'wp-block-styles' );
 
-        register_nav_menus(
+	    // excerpt settings
+	    add_filter('excerpt_length', [$this, 'new_excerpt_length'] );
+	    add_filter( 'excerpt_more', [$this, 'new_excerpt_more'] );
+
+	    ################################################################################
+	    # Image
+	    ################################################################################
+	    ImagesSettings::instance();
+
+
+	    ################################################################################
+	    # Nav
+	    ################################################################################
+
+	    register_nav_menus(
             array(
                 'primary' => esc_html__( 'Primary menu', 'accountant' )
             )
@@ -105,6 +121,7 @@ class General
     public function registerScripts()
     {
         wp_register_script(TEXTDOMAIN . '-main-js', ASSETSURL . '/js/main.js', ['jquery'], ASSETS_VERSION, true);
+        wp_register_script(TEXTDOMAIN . '-slick-js', ASSETSURL . '/js/slick.min.js', ['jquery'], ASSETS_VERSION, true);
     }
 
     /**
@@ -119,8 +136,22 @@ class General
         wp_enqueue_style( TEXTDOMAIN . '-style-lg-css');
 
         wp_enqueue_script(TEXTDOMAIN . '-main-js');
+        wp_enqueue_script(TEXTDOMAIN . '-slick-js');
     }
 
+	/**
+	 * change excerpt length(Post)
+	 * @param $length
+	 * @return int
+	 */
+	function new_excerpt_length($length) {
+		return 15;
+	}
 
+	function new_excerpt_more( $more ){
+		$post = get_post();
+
+		return '<span> ...</span></br></br><a class="excerpt_more hover-underline-animation" href="'. get_permalink($post->ID) . '">Читати далі...</a>';
+	}
 
 }

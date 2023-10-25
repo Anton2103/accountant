@@ -28,6 +28,51 @@
 
         $a.trigger('click');
 
+
+        $('.slider-main .slider').slick({
+            dots: false,
+            autoplay: true,
+            speed: 1000,
+            slidesToShow: 4,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                        dots: true,
+                        centerMode: false,
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+            ]
+        });
+
+        $('.blog-slider .slider').slick({
+            dots: false,
+            autoplay: true,
+            speed: 1000,
+            slidesToShow: 2,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                        dots: true,
+                        centerMode: false,
+                    }
+                },
+            ]
+        });
+
     });
 
 })(jQuery);
