@@ -1,4 +1,12 @@
 
+/* fallback */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(icon_google_fonts.woff2) format('woff2');
+}
+
 #faq_section h3 {
     padding: 0 0 30px 20px;
 }
@@ -42,22 +50,37 @@
 }
 
 [class^="ic-"], [class*=" ic-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: Montserrat, sans-serif;
-    speak: never;
-    font-style: normal;
+    font-family: 'Material Symbols Outlined';
     font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
+    font-style: normal;
+    font-size: 24px;
     line-height: 1;
-
-    /* Better Font Rendering =========== */
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.ic-plus:before {
-    content: "\002b";
+.ic-icon  {
+    font-size: 34px;
+    color: var(--black);
+    display: none;
+}
+
+.ic-icon.ic-icon-plus {
+    display: block;
+}
+
+.accordion-active .ic-icon-plus {
+    display: none;
+}
+
+.accordion-active .ic-icon-minus {
+    display: block;
 }
 
 @media (min-width: 768px) {

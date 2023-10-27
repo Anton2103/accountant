@@ -9,7 +9,10 @@ if ($faq_posts): ?>
                 <div class="accordion-item">
                     <div class="accordion-title">
                         <p class="accordion-title-text"><?php the_title(); ?></p>
-                        <div><span class="ic-plus"></span></div>
+                        <div>
+                            <span class="ic-icon ic-icon-plus material-symbols-outlined">add</span>
+                            <span class="ic-icon ic-icon-minus material-symbols-outlined">remove</span>
+                        </div>
                     </div>
                     <div class="accordion-content"><?php the_content(); ?></div>
                 </div>

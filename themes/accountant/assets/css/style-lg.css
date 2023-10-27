@@ -132,6 +132,13 @@ body.admin-bar .nav-block {
 
 #results .contacts-wrapper {
     align-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#results .contacts {
+    order: 1;
+    gap: 20px;
 }
 
 #results .phone-btn {

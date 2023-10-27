@@ -20,15 +20,6 @@
     <!-- End Google Tag Manager -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6075184775985810" crossorigin="anonymous">
     </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFGKE9D1BM"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-ZFGKE9D1BM');
-    </script>
 </head>
 
 <body <?php body_class(); ?>>

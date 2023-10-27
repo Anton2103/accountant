@@ -32,7 +32,7 @@
         $('.slider-main .slider').slick({
             dots: false,
             autoplay: true,
-            speed: 1000,
+            speed: 3000,
             slidesToShow: 4,
             infinite: true,
             responsive: [
@@ -43,6 +43,8 @@
                         adaptiveHeight: true,
                         dots: true,
                         centerMode: false,
+                        mobileFirst: true,
+                        arrows: false
                     }
                 },
                 {

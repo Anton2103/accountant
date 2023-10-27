@@ -3,12 +3,11 @@
         // Accordion variables
         let accordion = {
             content: '.accordion-content',
-            active: '.accordion-active',
-            title: '.accordion-title'
+            active: 'accordion-active',
+            title: '.accordion-title',
         }
 
         // Accordion
-
         $(accordion.title).on("click", function(e) {
 
             e.preventDefault();
