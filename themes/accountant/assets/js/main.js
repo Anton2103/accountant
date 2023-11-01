@@ -34,7 +34,7 @@
             autoplay: true,
             speed: 3000,
             slidesToShow: 4,
-            infinite: true,
+            infinite: false,
             responsive: [
                 {
                     breakpoint: 768,
@@ -59,9 +59,9 @@
         $('.blog-slider .slider').slick({
             dots: false,
             autoplay: true,
-            speed: 1000,
-            slidesToShow: 2,
-            infinite: true,
+            speed: 3000,
+            slidesToShow: 3,
+            infinite: false,
             responsive: [
                 {
                     breakpoint: 768,
@@ -70,11 +70,12 @@
                         adaptiveHeight: true,
                         dots: true,
                         centerMode: false,
+                        mobileFirst: true,
+                        arrows: false
                     }
                 },
             ]
         });
-
     });
 
 })(jQuery);

@@ -23,18 +23,15 @@ get_header(); ?>
 <?php endif; ?>
 <div class="blog-wrapper">
     <h1><?php the_title() ?></h1>
-    <div class="blog-image">
-		<?php if ( '' !== get_the_post_thumbnail()) : ?>
-            <div class="blog-content__img post-thumbnail slider-img">
-				<?php the_post_thumbnail('slider'); ?>
-            </div>
-		<?php endif; ?>
-    </div>
     <div class="blog-content"> <?php the_content(); ?></div>
+	<?php
+
+	$args = array('posts_per_page' => 23);
+	$lastposts = get_posts($args);
+	?>
     <div class="blog-slider">
-	    <?php
-            $args = array('posts_per_page' => 23);
-            $lastposts = get_posts($args);
+
+        <?php
             get_template_part( 'template-parts/slick', 'slider', ['posts_slider' => $lastposts] );
 	    ?>
     </div>

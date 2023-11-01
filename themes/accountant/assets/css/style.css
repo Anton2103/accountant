@@ -350,7 +350,9 @@ body.admin-bar .nav-block {
 #face .wp-block-columns,
 #results .wp-block-group__inner-container > div,
 #services .wp-block-group__inner-container > div,
-#blog .slick-slide .slider-item {
+#blog .slick-slide .slider-item,
+.slick-slide.slider-item,
+.blog-content {
     box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 
@@ -520,28 +522,27 @@ body.admin-bar .nav-block {
 /* Blog page */
 
 .blog-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     padding: 20px;
 }
 
-.blog-image {
-    background: #F7F7F7;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 15px;
+.blog-wrapper .slick-initialized {
+    padding-bottom: 42px;
+}
+
+.blog-wrapper h1 {
+   text-align: center;
 }
 
 .blog-content {
     background: #F7F7F7;
     border-radius: 20px;
     padding: 15px;
+    margin: 15px 0;
 }
 
 .blog-content p {
-    text-indent: 25px;
+    text-indent: 20px;
+    font-size: 16px;
 }
 
 /* POST SLIDER */
@@ -552,7 +553,7 @@ body.admin-bar .nav-block {
 }
 
 
-.slider-item {
+.slider-item, .slider-item.slick-slide {
     background: #F7F7F7;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -563,18 +564,34 @@ body.admin-bar .nav-block {
 .slider-img img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0 20px 20px;
     aspect-ratio: 1 / 1;
 }
 
+.slider-img {
+    position: relative;
+}
+
+
 .slider-title {
-    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px 10px;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(rgb(0,0,00,0), rgb(30,30,30, 0.56));
 }
 
 .slider-title p {
+    color: var(--white);
     font-size: 21px;
+}
+
+.slider-content {
+    padding-top: 10px;
 }
 
 .slider-content p {
@@ -583,6 +600,7 @@ body.admin-bar .nav-block {
 
 .excerpt_more {
     color: var(--black);
+    font-size: 14px;
 }
 
 .slick-arrow.slick-next,

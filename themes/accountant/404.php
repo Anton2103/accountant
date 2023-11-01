@@ -16,7 +16,7 @@ get_header(); ?>
 						</p>
 					</div>
 
-					<div class="blog-slider">
+					<div class="slider-main">
 						<?php
 						$args = array('posts_per_page' => 23);
 						$lastposts = get_posts($args);
