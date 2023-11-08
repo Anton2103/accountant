@@ -92,6 +92,7 @@ html {
     font-weight: 400;
     /*line-height: 36px;*/
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 /**
@@ -104,7 +105,7 @@ html {
 }
 
 body {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
     color: #010101;
     text-align: left;
