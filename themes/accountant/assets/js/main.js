@@ -28,6 +28,15 @@
 
         $a.trigger('click');
 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+                $('.header-wrapper').addClass('header-anime');
+            } else {
+                $('.header-wrapper').removeClass('header-anime');
+            }
+        })
+
+
 
         $('.slider-main .slider').slick({
             dots: false,

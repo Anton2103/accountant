@@ -5,6 +5,10 @@ section {
 
 /*HEADER*/
 
+#site-header .container {
+    background: transparent;
+}
+
 .brand {
     padding-top: 0;
 }
@@ -24,6 +28,7 @@ section {
     position: relative;
     height: 100%;
     top: 0;
+    background: transparent;
 }
 
 .nav-block a {
@@ -40,11 +45,14 @@ body.admin-bar .nav-block {
 
 .menu-menu-container ul {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu-menu-container li {
     font-size: 16px;
     margin: 0 10px;
+    padding: 0;
 }
 
 .menu-menu-container li a:hover {

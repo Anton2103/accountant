@@ -101,10 +101,29 @@ section .wp-block-group__inner-container {
     position: fixed;
     top: 0;
     width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     z-index: 99999;
-    box-shadow: 0 7px 12px -8px #aeaeae;
 }
+
+.header-wrapper {
+    box-shadow: 0 7px 12px -8px #aeaeae;
+    background: rgba(250, 250, 250);
+    width: 100%;
+    margin: 0 auto;
+    transition: all 1s ease-out;
+}
+
+.header-anime {
+    border-radius: 20px;
+    background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
+}
+
+@media screen and (min-width: 1250px) {
+    .header-anime {
+        width: 1250px;
+    }
+}
+
 
 #site-header .container {
     background: var(--white);
