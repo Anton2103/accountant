@@ -101,7 +101,6 @@ section .wp-block-group__inner-container {
     position: fixed;
     top: 0;
     width: 100%;
-    /*margin: 0 auto;*/
     z-index: 99999;
 }
 
@@ -232,7 +231,7 @@ body.admin-bar .nav-block {
     text-align: center;
     background: var(--white);
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 1s;
 }
 
 .nav-block.open {
