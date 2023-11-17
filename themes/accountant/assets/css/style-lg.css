@@ -5,8 +5,34 @@ section {
 
 /*HEADER*/
 
+.header-anime {
+    border-radius: 20px;
+    background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
+}
+
+.dark-mode .header-anime {
+    border-radius: 20px;
+    background: linear-gradient(rgb(46,48,71, 0.7), rgb(46,48,71), rgb(46,48,71, 0.7));
+}
+
+@media screen and (min-width: 1250px) {
+    .header-anime {
+        width: 1250px;
+    }
+}
+
+.dark-mode #site-header .container {
+    background: transparent;
+}
+
 #site-header .container {
     background: transparent;
+}
+
+.btn-dark-mode-wrap {
+    order: 3;
+    padding-right: 0;
+    padding-left: 15px;
 }
 
 .brand {
@@ -23,11 +49,15 @@ section {
 
 .nav-block {
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     flex-direction: row;
     position: relative;
     height: 100%;
     top: 0;
+    background: transparent;
+}
+
+.dark-mode .nav-block {
     background: transparent;
 }
 
@@ -66,7 +96,11 @@ body.admin-bar .nav-block {
 }
 
 .phone-btn {
-    margin: 0 0 0 30px
+    margin: 0 0 0 30px;
+}
+
+.nav-block .phone-btn {
+    margin: 0;
 }
 
 #site-header .social-block {
@@ -74,10 +108,10 @@ body.admin-bar .nav-block {
 }
 
 #site-header .social-block {
-    gap: 30px;
+    gap: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 45px;
+    padding-left: 20px;
 }
 
 

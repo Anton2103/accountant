@@ -23,14 +23,16 @@
     background: #F7F7F7;
     border-radius: 20px;
     padding: 15px 20px;
+}
 
+.dark-mode .accordion-item {
+    background: var(--dark_blue);
 }
 
 #faq_section .accordion-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #faq_section .accordion-title p {
@@ -69,6 +71,10 @@
     font-size: 34px;
     color: var(--black);
     display: none;
+}
+
+.dark-mode .ic-icon  {
+    color: var(--moderate_cyan);
 }
 
 .ic-icon.ic-icon-plus {

@@ -14,6 +14,11 @@ Text Domain:  accountant
 :root {
     --white: #FFFFFF;
     --black: #010101;
+    --dark_blue: #2E3047;
+    --very_dark_grayish_blue: #43455c;
+    --dark_grayish_blue: #707793;
+    --moderate_cyan: #3BBA9C;
+    --very_light_gray: #f7f7f7;
 
 }
 
@@ -110,6 +115,11 @@ body {
     color: #010101;
     text-align: left;
     background-color: #ffffff;
+}
+
+.dark-mode body {
+    background: var(--very_dark_grayish_blue);
+    color: var(--moderate_cyan);
 }
 
 button {

@@ -1,6 +1,8 @@
 
 (function ($){
     $(document).ready(function() {
+
+        /* burger menu */
         $('.toggle-nav').click(function(e) {
             e.preventDefault();
             $('.nav-block, .toggle-nav').toggleClass('open');
@@ -28,6 +30,7 @@
 
         $a.trigger('click');
 
+        /* header animation */
         $(window).scroll(function() {
             if ($(this).scrollTop() > 0) {
                 $('.header-wrapper').addClass('header-anime');
@@ -37,7 +40,7 @@
         })
 
 
-
+        /* blog slider on main page  */
         $('.slider-main .slider').slick({
             dots: false,
             autoplay: true,
@@ -65,6 +68,7 @@
             ]
         });
 
+        /* blog slider on blog page  */
         $('.blog-slider .slider').slick({
             dots: false,
             autoplay: true,
@@ -88,3 +92,15 @@
     });
 
 })(jQuery);
+
+    const button = document.querySelector(".btn-dark-mode");
+    const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function toggleDarkMode(state) {
+        document.documentElement.classList.toggle("dark-mode", state);
+    }
+    toggleDarkMode(useDark.matches);
+    useDark.addListener((evt) => toggleDarkMode(evt.matches));
+    button.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark-mode");
+    });

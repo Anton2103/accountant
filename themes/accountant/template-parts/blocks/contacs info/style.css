@@ -1,4 +1,8 @@
 
+.dark-mode #contactsInf .wp-block-group__inner-container .wp-block-columns {
+    background: transparent!important;
+}
+
 #contactsInf .contacts-wrapper {
     display: flex;
     flex-direction: column;
@@ -36,6 +40,10 @@
     padding-left: 10px;
 }
 
+.dark-mode .socials__link span {
+    color: var(--moderate_cyan);
+}
+
 .socials__link a {
     position: absolute;
     width: 100%;
@@ -49,11 +57,4 @@
     width: 300px;
     margin: auto;
     word-break: keep-all;
-}
-
-
-@media screen and (min-width: 768px) {
-
-
-
 }

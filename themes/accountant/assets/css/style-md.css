@@ -38,6 +38,14 @@
     display: block;
 }
 
+.dark-mode #about_us .wp-block-group__inner-container .wp-block-columns {
+    background: transparent!important;
+}
+
+.dark-mode #about_us .wp-block-group__inner-container .wp-block-column {
+    background: var(--dark_blue)!important;
+}
+
 #about_us h3 {
     padding: 5px 0 20px;
     font-weight: 400;
