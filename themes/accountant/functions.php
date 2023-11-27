@@ -44,6 +44,43 @@ add_action('after_setup_theme', function () {
     load_theme_textdomain('accountant', get_stylesheet_directory() . '/languages');
 });
 
+
+
+function cw_post_type_projects() {
+	$supports = array(
+		'title', // post title
+		'author', // post author
+		'thumbnail', // featured images
+		'excerpt', // post excerpt
+		'comments', // post comments
+	);
+	$labels = array(
+		'name' => _x('Projects', 'plural'),
+		'singular_name' => _x('Project', 'singular'),
+		'menu_name' => _x('projects', 'admin menu'),
+		'name_admin_bar' => _x('projects', 'admin bar'),
+		'add_new' => _x('Add New', 'add new'),
+		'add_new_item' => __('Add New projects'),
+		'new_item' => __('New projects'),
+		'edit_item' => __('Edit projects'),
+		'view_item' => __('View projects'),
+		'all_items' => __('All projects'),
+		'search_items' => __('Search projects'),
+		'not_found' => __('No projects found.'),
+	);
+	$args = array(
+		'supports' => $supports,
+		'labels' => $labels,
+		'public' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'projects'),
+		'has_archive' => true,
+		'hierarchical' => false,
+	);
+	register_post_type('projects', $args);
+}
+add_action('init', 'cw_post_type_projects');
+
 ################################################################################
 # Includes
 ################################################################################

@@ -33,6 +33,13 @@ class General
         add_action('init', [$this, 'registerStyles']);
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
 
+
+	    add_action( 'show_user_profile', [$this, 'extra_user_profile_fields'] );
+	    add_action( 'edit_user_profile', [$this, 'extra_user_profile_fields'] );
+
+	    add_action( 'personal_options_update', [$this, 'save_extra_user_profile_fields'] );
+	    add_action( 'edit_user_profile_update', [$this, 'save_extra_user_profile_fields'] );
+
 	    add_theme_support('post-thumbnails');
 
         ################################################################################
@@ -153,5 +160,32 @@ class General
 
 		return '<span> ...</span></br></br><a class="excerpt_more hover-underline-animation" href="'. get_permalink($post->ID) . '">Читати далі...</a>';
 	}
+
+
+	function extra_user_profile_fields( $user ) { ?>
+		<table class="form-table">
+			<tr>
+				<th><label for="address"><?php _e("Position"); ?></label></th>
+				<td>
+					<input type="text" name="position" id="position" value="<?php echo esc_attr( get_the_author_meta( 'position', $user->ID ) ); ?>" class="regular-text" /><br />
+					<span class="description"><?php _e("Please enter your position."); ?></span>
+				</td>
+			</tr>
+		</table>
+	<?php }
+
+	function save_extra_user_profile_fields( $user_id ) {
+		if ( empty( $_POST['_wpnonce'] ) || ! wp_verify_nonce( $_POST['_wpnonce'], 'update-user_' . $user_id ) ) {
+			return;
+		}
+
+		if ( !current_user_can( 'edit_user', $user_id ) ) {
+			return false;
+		}
+		update_user_meta( $user_id, 'position', $_POST['position'] );
+	}
+
+
+
 
 }
