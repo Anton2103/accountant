@@ -13,7 +13,7 @@
 
         <div class="socials__link button-grow">
             <span><?php echo $phone; ?></span>
-            <a class="button-grow" href="tel:<?php echo $phone; ?>"></a>
+            <a class="button-grow" href="tel:<?php echo $phone; ?>" aria-label="Зателефонуйте"></a>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
                             <img class="light-theme" src="<?php echo $social_icon_footer; ?>" alt="<?php echo $url_social; ?>">
                             <img class="dark-theme" src="<?php echo $icon_social_black_theme; ?>" alt="<?php echo $url_social; ?>">
                             <span><?php echo  $social_name; ?></span>
-                            <a href="<?php echo $url_social; ?>" target="_blank"> </a>
+                            <a href="<?php echo $url_social; ?>" aria-label="<?php echo $social_name; ?>" target="_blank"> </a>
                         </div>
                     <?php
                     endif;
