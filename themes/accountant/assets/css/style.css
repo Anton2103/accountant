@@ -105,6 +105,14 @@ section .wp-block-group__inner-container {
     display: none;
 }
 
+.header-wrapper.header-anime {
+    background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
+}
+
+.dark-mode .header-wrapper.header-anime {
+    background: linear-gradient(rgb(46,48,71, 0.7), rgb(46,48,71), rgb(46,48,71, 0.7));
+}
+
 .dark-mode .light-theme {
     display: none;
 }
@@ -151,6 +159,7 @@ section .wp-block-group__inner-container {
 .dark-mode .site-logo img,
 .dark-mode .face-mob img,
 .dark-mode #about_us_mob img,
+.dark-mode #about_us img,
 .dark-mode .photo_lg img {
     -webkit-filter: drop-shadow(1px 1px 3px var(--moderate_cyan));
     filter: drop-shadow(1px 1px 3px var(--moderate_cyan));
@@ -300,8 +309,9 @@ body.admin-bar .toggle-nav {
     position: absolute;
     width: 100%;
     height: 0;
-    top: 80px;
+    top: 0;
     left: 0;
+    z-index: -1;
     text-align: center;
     background: var(--white);
     overflow: hidden;
@@ -314,6 +324,7 @@ body.admin-bar .toggle-nav {
 
 .nav-block.open {
     height: 100vh;
+    padding-top: 80px;
 }
 
 .menu-menu-container {
@@ -836,7 +847,50 @@ body.admin-bar .toggle-nav {
 .slick-dots li button{}
 
 
-/* Footer */
+/*  Google-map */
+
+
+.dark-map {
+    display: none;
+}
+
+.dark-mode .dark-map {
+    display: block;
+}
+
+.dark-mode .google-map {
+    display: none;
+}
+
+.getwid-poi-info-window {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.dark-mode .getwid-poi-info-window {
+    color: var(--black);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.dark-mode .gm-style .gm-style-iw-c {
+    background: var(--moderate_cyan);
+    padding: 12px!important;
+}
+
+.dark-mode .gm-style .gm-style-iw-tc::after {
+    background: var(--moderate_cyan);
+}
+
+.dark-mode .gm-style .gm-style-iw-c .gm-style-iw-d {
+    overflow: auto!important;
+}
+
+
+    /* Footer */
 
 .footer-container {
     display: flex;
@@ -898,4 +952,35 @@ body.admin-bar .toggle-nav {
     text-align: center;
     text-indent: 0;
 }
+
+.wrapper-author {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+    gap: 30px;
+    width: 800px;
+    margin: 10px auto;
+}
+
+.img-author img {
+    border-radius: 50%;
+}
+
+.wrap-about-author p {
+   padding-top: 10px;
+}
+
+.wrap-about-author button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
 
