@@ -105,6 +105,14 @@ section .wp-block-group__inner-container {
     display: none;
 }
 
+.header-wrapper.header-anime {
+    background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
+}
+
+.dark-mode .header-wrapper.header-anime {
+    background: linear-gradient(rgb(46,48,71, 0.7), rgb(46,48,71), rgb(46,48,71, 0.7));
+}
+
 .dark-mode .light-theme {
     display: none;
 }
@@ -301,8 +309,9 @@ body.admin-bar .toggle-nav {
     position: absolute;
     width: 100%;
     height: 0;
-    top: 80px;
+    top: 0;
     left: 0;
+    z-index: -1;
     text-align: center;
     background: var(--white);
     overflow: hidden;
@@ -315,6 +324,7 @@ body.admin-bar .toggle-nav {
 
 .nav-block.open {
     height: 100vh;
+    padding-top: 80px;
 }
 
 .menu-menu-container {

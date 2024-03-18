@@ -6,23 +6,19 @@ section {
 /*HEADER*/
 
 .header-anime {
-    border-radius: 20px;
     background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
 }
 
 .dark-mode .header-anime {
-    border-radius: 20px;
     background: linear-gradient(rgb(46,48,71, 0.7), rgb(46,48,71), rgb(46,48,71, 0.7));
-}
-
-@media screen and (min-width: 1250px) {
-    .header-anime {
-        width: 1250px;
-    }
 }
 
 .dark-mode #site-header .container {
     background: transparent;
+}
+
+.nav-block {
+    z-index: 0;
 }
 
 #site-header .container {
