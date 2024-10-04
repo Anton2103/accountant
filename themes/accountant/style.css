@@ -4,7 +4,7 @@ Theme URI:
 Description: Theme for accountant
 Author:      Anton
 Author URI:
-Version:      1.0.5
+Version:      1.0.6
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
@@ -19,6 +19,7 @@ Text Domain:  accountant
     --dark_grayish_blue: #707793;
     --moderate_cyan: #51C8AC;
     --very_light_gray: #f7f7f7;
+    --dark_desaturated_blue: #2e3047;
 
 }
 
