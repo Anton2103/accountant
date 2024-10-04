@@ -5,14 +5,6 @@ section {
 
 /*HEADER*/
 
-.header-anime {
-    background: linear-gradient(rgb(250,250,250, 0.7), rgb(250,250,250), rgb(250,250,250, 0.7));
-}
-
-.dark-mode .header-anime {
-    background: linear-gradient(rgb(46,48,71, 0.7), rgb(46,48,71), rgb(46,48,71, 0.7));
-}
-
 .dark-mode #site-header .container {
     background: transparent;
 }
@@ -113,22 +105,56 @@ body.admin-bar .nav-block {
 
 /*CONTENT*/
 
-#face .has-background {
+#about_us .wp-block-getwid-image-box {
+    display: flex;
+    padding: 10px 0;
+}
+
+#about_us .wp-block-getwid-image-box p {
+    line-height: 1.3;
+}
+
+#about_us .wp-block-getwid-content-slider {
+    display: none;
+}
+
+#about_us .contacts-wrapper {
+    justify-content: start;
+}
+
+#about_us .user-name p {
+    text-align: center;
+    width: auto;
+}
+
+#about_us .wp-block-column.is-vertically-aligned-center {
+    align-self: center;
+}
+
+#about_us .photo_lg {
+    display: block;
+}
+
+#about_us .face-mob {
+    display: none;
+}
+
+#about_us .has-background {
     padding-right: 74px;
     padding-bottom: 0;
 }
 
-#face h3 {
+#about_us h3 {
     line-height: 66px;
 }
 
-#face h4 {
+#about_us h4 {
     line-height: 52px;
     padding-top: 20px;
 }
 
-#face h3,
-#face h4 {
+#about_us h3,
+#about_us h4 {
     line-height: 1.5;
 }
 
