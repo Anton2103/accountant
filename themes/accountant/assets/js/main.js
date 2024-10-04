@@ -46,7 +46,7 @@
             autoplay: true,
             speed: 3000,
             slidesToShow: 4,
-            infinite: false,
+            infinite: true,
             responsive: [
                 {
                     breakpoint: 768,
@@ -74,7 +74,7 @@
             autoplay: true,
             speed: 3000,
             slidesToShow: 3,
-            infinite: false,
+            infinite: true,
             responsive: [
                 {
                     breakpoint: 768,

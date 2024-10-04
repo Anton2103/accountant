@@ -203,6 +203,7 @@ body.admin-bar .nav-block {
 
 .slider-wrapper {
     padding: 0 20px;
+    position: relative;
 }
 
 .slick-slide{
@@ -226,7 +227,37 @@ body.admin-bar .nav-block {
 }
 
 
-/* Contacts inf*/
+.slider-wrapper:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15px;
+    background: linear-gradient(90deg,#fff,rgba(255, 255, 255, 0.5) 55%,rgba(255, 255, 255, 0.2));
+    z-index: 1;
+}
+
+.dark-mode .slider-wrapper:before {
+    background: linear-gradient(90deg,var(--very_dark_grayish_blue),rgba(67, 69, 92, 0.5) 55%,rgba(67, 69, 92, 0.2));
+}
+
+.slider-wrapper:after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 0;
+    height: 100%;
+    width: 15px;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.5) 55%,#fff);
+    z-index: 1;
+}
+
+.dark-mode .slider-wrapper:after {
+    background: linear-gradient(90deg,rgba(67, 69, 92, 0.2),rgba(67, 69, 92, 0.5) 55%,var(--very_dark_grayish_blue));
+}
+
+    /* Contacts inf*/
 
 #contactsInf .wp-block-getwid-map .wp-block-getwid-map__container {
     height: 600px !important;

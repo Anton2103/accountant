@@ -34,7 +34,7 @@ define('ADMINURI', THEMEURL . '/Admin');
 
 define('VERSION', $version ?? '0.0.6');
 
-define('ASSETS_VERSION', '1.0.5');
+define('ASSETS_VERSION', '1.0.6');
 
 ################################################################################
 # Load the translations from the child theme if present
