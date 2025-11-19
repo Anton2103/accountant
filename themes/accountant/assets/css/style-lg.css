@@ -3,11 +3,13 @@ section {
     padding: 20px 0;
 }
 
-/*HEADER*/
-
-.dark-mode #site-header .container {
-    background: transparent;
+#site-header .social-icon {
+    width: 32px;
+    height: auto;
 }
+
+
+/*HEADER*/
 
 .nav-block {
     z-index: 0;
@@ -15,12 +17,6 @@ section {
 
 #site-header .container {
     background: transparent;
-}
-
-.btn-dark-mode-wrap {
-    order: 3;
-    padding-right: 0;
-    padding-left: 15px;
 }
 
 .brand {
@@ -37,7 +33,7 @@ section {
 
 .nav-block {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     position: relative;
     height: 100%;
@@ -45,12 +41,8 @@ section {
     background: transparent;
 }
 
-.dark-mode .nav-block {
-    background: transparent;
-}
-
 .nav-block a {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 body.admin-bar .nav-block {
@@ -83,12 +75,13 @@ body.admin-bar .nav-block {
     padding: 0;
 }
 
-.phone-btn {
-    margin: 0 0 0 30px;
-}
-
 .nav-block .phone-btn {
     margin: 0;
+    padding: 10px 15px;
+}
+
+.nav-block .phone-btn a {
+    font-size: 16px;
 }
 
 #site-header .social-block {

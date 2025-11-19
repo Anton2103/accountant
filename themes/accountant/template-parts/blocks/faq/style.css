@@ -20,13 +20,9 @@
 
 .accordion-item {
     width: 100%;
-    background: #F7F7F7;
-    border-radius: 20px;
+    background: var(--darck_maroom);
+    border-radius: 8px;
     padding: 15px 20px;
-}
-
-.dark-mode .accordion-item {
-    background: var(--dark_blue);
 }
 
 #faq_section .accordion-title {
@@ -69,12 +65,8 @@
 
 .ic-icon  {
     font-size: 34px;
-    color: var(--black);
+    color: var(--white);
     display: none;
-}
-
-.dark-mode .ic-icon  {
-    color: var(--moderate_cyan);
 }
 
 .ic-icon.ic-icon-plus {
@@ -100,6 +92,7 @@
     .accordion-item {
         width: 49%;
         padding: 20px;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
     }
 
     .accordion-item:last-child {

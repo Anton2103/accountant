@@ -2,6 +2,28 @@
 (function ($){
     $(document).ready(function() {
 
+        var text = "KEY CONSULT"; // Your title text
+        var $title = $(".animated-title");
+        var interval = 100; // ms delay between letters
+        var pause = 2000; // pause after full word before repeat (ms)
+
+        function animateTitle() {
+            $title.html(""); // Clear previous content
+
+            $.each(text.split(""), function (i, char) {
+                setTimeout(function () {
+                    $title.append("<span>" + char + "</span>");
+                }, i * interval);
+            });
+
+            // After full animation + pause, restart
+            var totalTime = text.length * interval + pause;
+            setTimeout(animateTitle, totalTime);
+        }
+
+        // Initial start
+        animateTitle();
+
         /* burger menu */
         $('.toggle-nav').click(function(e) {
             e.preventDefault();
@@ -15,9 +37,9 @@
 
 
         $('.nav-block .menu-menu-container li a').click(function() {
+            $('.nav-block, .toggle-nav').removeClass('open');
             $('.nav-block li a').removeClass('active');
             $(this).addClass('active');
-            $('.nav-block, .toggle-nav').removeClass('open');
         });
 
         let hash = window.location.hash;

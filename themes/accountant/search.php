@@ -1,13 +1,10 @@
 <?php
 /**
- * The template for displaying 404 pages (not found).
+ * The template for displaying search results.
  *
- * @package storefront
+ * @package accountant
  */
 
-get_header(); ?>
-	<div>
-		<?php wp_redirect(home_url()) ?>
-	</div>
-<?php
-get_footer();
+// Redirect all searches to home page
+wp_redirect( home_url() );
+exit;

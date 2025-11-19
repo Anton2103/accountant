@@ -12,15 +12,16 @@ Text Domain:  accountant
 */
 
 :root {
-    --white: #FFFFFF;
-    --black: #010101;
+    --white: #eeeeee;
+    --black: #080304;
     --dark_blue: #2E3047;
     --very_dark_grayish_blue: #43455c;
     --dark_grayish_blue: #707793;
     --moderate_cyan: #51C8AC;
     --very_light_gray: #f7f7f7;
     --dark_desaturated_blue: #2e3047;
-
+    --marsala: #4c232a;
+    --darck_maroom: #2b1c1e;
 }
 
 .entry-content > * {
@@ -77,6 +78,7 @@ h6 {
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    color: var(--white);
 }
 
 p {
@@ -92,13 +94,12 @@ p {
  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 html {
-
     /* Apply border-box across the entire page. */
     font-family: IBMPlexSans, sans-serif;
     font-weight: 400;
-    /*line-height: 36px;*/
+    line-height: 1.5;
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /**
@@ -113,14 +114,9 @@ html {
 body {
     font-size: 1rem;
     font-weight: 400;
-    color: #010101;
+    color: var(--white);
     text-align: left;
-    background-color: #ffffff;
-}
-
-.dark-mode body {
-    background: var(--very_dark_grayish_blue);
-    color: var(--moderate_cyan);
+    background-color: var(--marsala);
 }
 
 button {

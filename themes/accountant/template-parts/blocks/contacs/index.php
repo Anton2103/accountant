@@ -14,15 +14,12 @@ $face_mobile = get_field('face_mobile', 'option');
 				$url_social         = get_sub_field('url_social_network');
 				$icon_social_header = get_sub_field('social_icon_header');
 				$active_social      = get_sub_field('active_social');
-				$icon_social_black_theme = get_sub_field('social_icon_black_theme');
-
 				if ($active_social == 'true'):
 					?>
                     <div class="social-block__img-shadow button-grow">
                         <a href="<?php
 						echo $url_social; ?>" target="_blank">
-                            <img class="light-theme" src="<?php echo $icon_social_header; ?>" alt="<?php echo $url_social; ?>">
-                            <img class="dark-theme" src="<?php echo $icon_social_black_theme; ?>" alt="<?php echo $url_social; ?>">
+                            <img class="social-icon" src="<?php echo $icon_social_header; ?>" alt="<?php echo $url_social; ?>">
                         </a>
                     </div>
 				<?php
@@ -39,9 +36,14 @@ $face_mobile = get_field('face_mobile', 'option');
 			echo $phone; ?></a>
     </div>
 </div>
-<div class="user-name">
-    <?php
-    $phone_name = get_field('phone_name', 'option');
-    ?>
-    <p><?php echo $phone_name; ?></p>
-</div>
+
+<?php
+$phone_name = get_field('phone_name', 'option');
+$phone_name_show = get_field('phone_name_show', 'option');
+
+if ($phone_name_show == 'true') : ?>
+    <div class="user-name">
+        <p><?php echo $phone_name; ?></p>
+    </div>
+<?php endif; ?>
+

@@ -6,6 +6,18 @@
     /*pointer-events: none;*/
 }
 
+#site-header .container {
+    padding: 0 20px;
+}
+
+.animated-title-wrapper-mob {
+display: none;
+}
+
+.animated-title-wrapper {
+    width: auto;
+    display: block;
+}
 
 /* ABOUT_US */
 
@@ -19,6 +31,8 @@
 
 #about_us .contacts-wrapper {
     justify-content: center;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 #about_us .wp-block-group__inner-container > .wp-block-columns {
@@ -32,16 +46,11 @@
 }
 
 
-#about_us .phone-btn {
-    width: 230px;
-}
-
 #about_us h1,
 #about_us h3 {
     line-height: 1.3;
     text-align: left;
 }
-
 
 #about_us {
     display: block;
@@ -72,7 +81,11 @@
 
 /* RESULTS */
 
-#results .wp-block-columns.has-background {
+#results .wp-block-columns {
+    flex-direction: row;
+}
+
+#results .wp-block-group__inner-container > .wp-block-columns:nth-child(1) {
     flex-direction: row-reverse;
 }
 
@@ -99,11 +112,10 @@
 
 /* FOOTER */
 
-.footer-contacts {
-    flex-direction: row;
-    gap: 20px;
+.footer-container .social-icon {
+    width: 45px;
 }
 
-.footer-container .button-grow {
-    order: 1;
+.title-footer {
+    display: block;
 }

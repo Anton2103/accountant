@@ -1,4 +1,3 @@
-
 .dark-mode #contactsInf .wp-block-group__inner-container .wp-block-columns {
     background: transparent!important;
 }
@@ -23,11 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #010101;
+    background: var(--darck_maroom);
     width: 230px;
     height: 52px;
     border-radius: 10px;
     margin: 10px auto 30px auto;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
 }
 
 .socials__link img {
